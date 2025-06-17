@@ -1,0 +1,1 @@
+document.write("Hello Again With External File...");

@@ -1,0 +1,45 @@
+Array functions 
+1. array.length();
+<html>
+    <head></head>
+    <body>
+        <h1>Example Of Array</h1>
+        <script>
+            
+           var a=["dev","7150","gpg"];
+            for(var i=0;i<3;i++){
+                document.write(a[i]+"<br>");
+            }
+            document.write("<br>");
+            
+
+            var d = new Array(2);
+
+            for(var i=0;i<2;i++)
+            {
+                d[i]= new Array(2);
+            }
+
+            for(var i=0;i<2;i++)
+            {
+                for(var j=0;j<2;j++)
+                {
+                    d[i][j]=prompt('Enter number :');
+                }
+            } 
+            document.write("<h1>get value from user and display it</h1>");
+            document.write("<center><table border='5px' cellspacing='0px' cellpadding='20px'>");
+            for(var k=0;k<2;k++)
+            {
+                document.write("<tr>")
+                for(var l=0;l<2;l++)
+                {
+                    
+                    document.write("<td>"+d[k][l]+"</td>");
+                }
+                document.write("<br></tr>");
+            } 
+            documewnt.write("</table></center>"); 
+        </script>
+    </body>
+</html>

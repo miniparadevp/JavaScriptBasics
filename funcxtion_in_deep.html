@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      let val1 = 0; // Using 'let' for better scope
+      let val2 = 0; // Using 'let' for better scope
+      let operator; // Using 'let' for better scope
+
+      // 1. Convert both inputs to numbers immediately
+      //    parseFloat is used to handle potential decimal numbers.
+      val1 = parseFloat(prompt("Enter the first value :"));
+      val2 = parseFloat(prompt("Enter the second value :")); // Fixed typo "sencond" to "second"
+
+      // 2. Check if either input is NaN (Not a Number)
+      //    isNaN() is the correct way to check if a value is a valid number.
+      if (isNaN(val1) || isNaN(val2)) {
+        alert("Enter valid numerical data..");
+      } else {
+        // If both inputs are valid numbers, proceed with asking for the operator
+        operator = prompt(
+          "Select the operation from (+,-,/,*) \nNote :Choose any one..:" // Corrected <br> to \n and "ant" to "any"
+        );
+
+        switch (operator) {
+          case "+":
+            add(val1, val2);
+            break;
+          case "-":
+            sub(val1, val2);
+            break;
+          case "/":
+            div(val1, val2);
+            break;
+          case "*":
+            mul(val1, val2);
+            break;
+          default:
+            alert("Enter a valid operation (+, -, /, *)...!!");
+        }
+      }
+
+      // --- Function Definitions ---
+      // Moved functions outside the main execution block for better organization,
+      // though in JavaScript, function declarations are hoisted.
+      function add(num1, num2) {
+        const result = num1 + num2;
+        console.log("Answer is :", result);
+        alert("Answer is :" + result); // Added alert for immediate feedback
+      }
+      function sub(num1, num2) {
+        const result = num1 - num2;
+        console.log("Answer is :", result);
+        alert("Answer is :" + result);
+      }
+      function div(num1, num2) {
+        if (num2 === 0) {
+          const errorMessage = "Error: Division by zero is not allowed.";
+          console.log(errorMessage);
+          alert(errorMessage);
+        } else {
+          const result = num1 / num2;
+          console.log("Answer is :", result);
+          alert("Answer is :" + result);
+        }
+      }
+      function mul(num1, num2) {
+        const result = num1 * num2;
+        console.log("Answer is :", result);
+        alert("Answer is :" + result);
+      }
+    </script>
+    <title>Simple Calculator with Validation</title>
+  </head>
+  <body></body>
+</html>

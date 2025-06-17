@@ -1,0 +1,45 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <h1> Array Modification</h1>
+        <script>
+            document.write("<h4>Delete Array element</h4>");
+            var ary=[['1','2',"3","dev"],["4","5","6","acd"],["7","8","9","xsd"]];
+            document.write("<h3>Normal Array :</h3>")
+            for(var i=0;i<3;i++)
+            {
+                for(var j=0;j<4;j++)
+                {
+                        document.write(ary[i][j]+"  ");
+                }
+                document.write("<br>");
+            }
+            // if i want to update any array element so then first i want to find
+            // that element location and after using this location i can update array element like that
+            ary[2][3]="update"; 
+            document.write("<h3>After Update </h3>");
+            for(var i=0;i<3;i++)
+            {
+                for(var j=0;j<4;j++)
+                {
+                        document.write(ary[i][j]+"  ");
+                }
+                document.write("<br>");
+            } 
+            
+            delete ary[2][1];
+            document.write("<h3>After delete </h3>");
+            for(var i=0;i<3;i++)
+            {
+                for(var j=0;j<4;j++)
+                {
+                        document.write(ary[i][j]+"  ");
+                }
+                document.write("<br>");
+            } 
+            document.write("<br>where element was deleted their undifined was written");
+        </script>
+
+    </body>
+</html>

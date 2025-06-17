@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+<body>
+
+	Name :<input type="text" id="s_name"></input>
+
+	<button onclick="my_fun()">Submit</button>
+	<p id="demo"></p>
+	<script>
+		function my_fun()
+		{
+			var x = document.getelementById("s_name").vlaue;
+			document.getelementById("demo").innerHTML=x;
+		}
+		
+	</script>
+
+</body>
+</html>
+/*
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int a[3];
+    int i,mobile=100,cover=110,otg=60;
+    char x;
+    
+    
+    printf("1. mobile = 100\n");
+    printf("2. cover  = 103\n");
+    printf("3. OTG    = 60\n");
+    
+    
+    for(i=1;i<=2;i++)
+    { 
+         printf("Enter the iteam %d :",i);
+        scanf("%d",&a[i]);
+        
+    }
+    
+    
+    
+    
+    if(a[1]==1 && a[2]==1)
+    {
+        printf("Your Cart Value is :%d",mobile+mobile);
+    }
+    
+   
+    else if(a[1]==1 && a[2]==2)
+    {
+        printf("Your Cart Value is :%d",mobile+cover);
+    }
+    
+    else if(a[1]==1 && a[2]==3)
+    {
+        printf("Your Cart Value is :%d",mobile+otg);
+    }
+    
+    else if(a[1]==2 && a[2]==1)
+    {
+        printf("Your Cart Value is :%d",cover+mobile);
+    }
+    else if(a[1]==2 && a[2]==2)
+    {
+        printf("Your Cart Value is :%d",cover+cover);
+    }
+    else if(a[1]==2 && a[2]==3)
+    {
+        printf("Your Cart Value is :%d",cover+otg);
+    }
+    
+    else if(a[1]==3 && a[2]==1)
+    {
+        printf("Your Cart Value is :%d",otg+mobile);
+    }
+    else if(a[1]==3 && a[2]==2)
+    {
+        printf("Your Cart Value is :%d",otg+cover);
+    }
+    else if(a[1]==3 && a[2]==3)
+    {
+        printf("Your Cart Value is :%d",otg+otg);
+    }
+    
+    else
+    {
+        printf("Enter Valid Details...!!!");
+    }
+    
+    
+    
+    
+    
+     
+}
+*/
